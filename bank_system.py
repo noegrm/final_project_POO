@@ -224,9 +224,7 @@ if __name__ == "__main__":
 
 """
 
-# ---------------------------------------------------------
-# SYSTEME CENTRAL BANCAIRE
-# ---------------------------------------------------------
+# Mise en place du système centrale
 
 class BankSystem:
     def __init__(self):
@@ -237,9 +235,7 @@ class BankSystem:
 
         self._init_demo_data()
 
-    # -----------------------------------------------------
     # Données de démonstration
-    # -----------------------------------------------------
     def _init_demo_data(self):
         admin = Admin("admin", "admin123")
         alice = Client("alice", "alice123")
@@ -256,9 +252,7 @@ class BankSystem:
         alice.add_account(acc1)
         alice.add_account(acc2)
 
-    # -----------------------------------------------------
     # Authentification
-    # -----------------------------------------------------
     def login(self):
         username = input("Nom d'utilisateur : ")
         password = getpass.getpass("Mot de passe : ")
@@ -277,9 +271,7 @@ class BankSystem:
         self.current_user = None
         print("\n🔒 Déconnexion effectuée\n")
 
-    # -----------------------------------------------------
     # Menu principal
-    # -----------------------------------------------------
     def run(self):
         while True:
             print("\n=== SYSTEME BANCAIRE ===")
@@ -295,14 +287,12 @@ class BankSystem:
                     elif self.current_user.role == "admin":
                         self.menu_admin()
             elif choix == "2":
-                print("Au revoir 👋")
+                print("Au revoir ! 👋")
                 break
             else:
                 print("Choix invalide")
 
-    # -----------------------------------------------------
-    # MENU CLIENT
-    # -----------------------------------------------------
+    # menu client
     def menu_client(self):
         while True:
             print("\n--- MENU CLIENT ---")
@@ -338,9 +328,7 @@ class BankSystem:
             else:
                 print("Choix invalide")
 
-    # -----------------------------------------------------
-    # MENU ADMIN
-    # -----------------------------------------------------
+    #Menu admin
     def menu_admin(self):
         while True:
             print("\n--- MENU ADMIN ---")
@@ -375,9 +363,7 @@ class BankSystem:
             else:
                 print("Choix invalide")
 
-    # -----------------------------------------------------
-    # OPERATIONS CLIENT
-    # -----------------------------------------------------
+    # Operation client
     def _deposit(self):
         acc_id = input("ID du compte : ")
         amount = float(input("Montant : "))
@@ -429,9 +415,7 @@ class BankSystem:
                 Transaction("VIREMENT", amount, "FAILED", "Échec virement", src, dst)
             )
 
-    # -----------------------------------------------------
-    # OPERATIONS ADMIN
-    # -----------------------------------------------------
+    # Opération admin
     def _create_client(self):
         username = input("Nom utilisateur : ")
         password = getpass.getpass("Mot de passe : ")
@@ -481,9 +465,7 @@ class BankSystem:
         )
         print("✅ Traitement mensuel effectué")
 
-    # -----------------------------------------------------
-    # TRANSACTIONS
-    # -----------------------------------------------------
+    # transaction
     def _list_transactions(self, all_users=False):
         for t in self.transactions:
             print(t)
