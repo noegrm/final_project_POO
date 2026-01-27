@@ -110,7 +110,7 @@ Compte courant avec des **frais mensuels**.
 
 ### Classe `SavingsAccount` (hérite de `Account`)
 
-Compte épargne avec intérêts mensuels (même si dans notre cas on ne peut pas vraiment le faire donc on enlève 5euros à la création du compte"
+Compte épargne avec intérêts mensuels (même si dans notre cas on ne peut pas vraiment le faire donc nous avons mis cette fonctionnalité à la main de l'admin)
 
 - Un pourcentage d’intérêt est ajouté chaque mois
 - Utilise également le polymorphisme avec `apply_monthly_process()`
