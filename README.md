@@ -133,7 +133,7 @@ Attributs :
 
 Même les opérations échouées sont enregistrées, ce qui permet une traçabilité complète. Commme ça nous les voyons dans l'historiques.
 
-## 🏛️ Classe centrale `BankSystem`
+## Classe centrale `BankSystem`
 
 C’est la classe principale qui gère tout le fonctionnement du programme.
 
@@ -148,7 +148,7 @@ Responsabilités :
 
 Le programme démarre depuis cette classe.
 
-## 🧪 Données de démonstration
+## Données de démonstration
 
 Au lancement du programme, des données sont déjà créées :
 
