@@ -5,7 +5,7 @@ from datetime import datetime
 import getpass
 
 
-# Partie 1 : Mise en place des CLASSES UTILISATEURS
+# Partie 1 : classe utilisateurs
 
 class User:
     """
@@ -54,7 +54,7 @@ class Admin(User):
         super().__init__(username, password)
         self.role = "admin"
 
-# classe cmpte bancaire
+# classe compte bancaire
 
 class Account:
     """
@@ -185,9 +185,9 @@ class Transaction:
         Transaction._transaction_counter += 1
 
         self.timestamp = datetime.now()
-        self.transaction_type = transaction_type  # DEPOT, RETRAIT, VIREMENT, SYSTEM
+        self.transaction_type = transaction_type
         self.amount = amount
-        self.status = status  # SUCCESS / FAILED
+        self.status = status
         self.description = description
         self.source_account = source_account
         self.destination_account = destination_account
