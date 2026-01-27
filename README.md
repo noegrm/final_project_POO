@@ -1,5 +1,11 @@
 # final_project_POO
 
+
+# Utilisation de Github pour travailler de manière collaborative 
+# Lien : https://github.com/noegrm/final_project_POO
+
+Développé par : SOMASSOUNDARAME Srijan, MFABOUM Anaïs, GERME Noé, RICHARD Alexia 
+
 Projet POO – Système Bancaire en Python
 
 Présentation du projet :
