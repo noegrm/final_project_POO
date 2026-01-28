@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "username": "alice",
+      "password": "alice123",
+      "role": "client"
+    }
+  ],
+  "accounts": [
+    {
+      "account_id": "ACC0001",
+      "owner": "alice",
+      "balance": 500.0,
+      "is_frozen": false,
+      "type": "current"
+    },
+    {
+      "account_id": "ACC0002",
+      "owner": "alice",
+      "balance": 1000.0,
+      "is_frozen": false,
+      "type": "savings"
+    }
+  ],
+  "transactions": []
+}
